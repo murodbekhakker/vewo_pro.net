@@ -63,12 +63,24 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media (max-width: 910px) {
+      & {
+        margin-left: 49px;
+        position: absolute;
+        z-index: 99;
+      }
+    }
   }
   .nav_menus_logo {
     display: flex;
     gap: 21px;
+    // .nav_logo {
+    //   margin-top: 40px;
+    // }
     .nav_menu {
       display: flex;
+      align-items: center;
       gap: 21px;
       &_link {
         width: 137px;
@@ -79,27 +91,44 @@ nav {
         line-height: 23px;
         color: var.$bg-dark;
         text-transform: uppercase;
+
+        @media (max-width: 910px) {
+          & {
+            margin-top: 400000px;
+          }
+        }
       }
       @media (max-width: 910px) {
         & {
-          position: relative;
+          position: absolute;
           display: none;
-          z-index: 9999;
+          z-index: 999;
         }
         &.active {
-          padding-top: 100px;
-          position: absolute;
-          z-index: 9999999;
+          transition: 1s;
+          border-radius: 15px;
+          border: 1px solid var.$bg-fire-yellow;
+          display: flex;
+          justify-content: center;
+          height: 240px;
+          width: 150px;
+          background-color: var.$bg-fire-yellow;
+          margin-top: 80px;
+          position: relative;
+          z-index: 9;
           display: flex !important;
           flex-direction: column;
         }
       }
     }
+    @media (max-width: 910px) {
+      display: block;
+    }
   }
   @media (max-width: 910px) {
-    // & {
-    //   display: flex;
-    //   align-items: normal;
-    // }
+    & {
+      display: flex;
+      align-items: normal;
+    }
   }
 }
