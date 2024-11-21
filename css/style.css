@@ -42,11 +42,13 @@ nav {
   nav {
     margin-top: 40px;
     flex-direction: column;
+    margin-bottom: 40px;
   }
 }
 @media (max-width: 470px) {
   nav {
-    flex-direction: column;
+    flex-direction: row;
+    gap: 20px;
   }
 }
 nav .nav_input {
@@ -91,6 +93,11 @@ nav .nav_logo_2 {
 @media (max-width: 910px) {
   nav .nav_logo_2 {
     margin: 10px 0 10px 0;
+  }
+}
+@media (max-width: 470px) {
+  nav .nav_logo_2 {
+    display: none;
   }
 }
 nav .nav_menus_logo {
@@ -140,7 +147,7 @@ nav .nav_menus_logo .nav_menu_link {
 }
 @media (max-width: 470px) and (max-width: 470px) {
   nav .nav_menus_logo .nav_menu.active {
-    margin-top: 230px;
+    margin-top: 90px;
     flex-direction: column-reverse;
   }
 }
