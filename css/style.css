@@ -26,7 +26,7 @@ a {
 }
 
 header {
-  z-index: 1000000000000000000;
+  z-index: 999999999;
   position: sticky;
   top: 0;
   scroll-behavior: smooth;
@@ -512,4 +512,228 @@ nav .nav_menus_logo .nav_menu_link {
   font-weight: 400;
   line-height: 23px;
   color: #f55f39;
+}
+
+.section_foto_card {
+  position: relative;
+  z-index: 10;
+  padding-left: 57px;
+  padding-top: 155px;
+  background-image: url("../images/foto_img.png");
+  background-size: cover;
+  width: 100%;
+  height: 660px;
+}
+@media (max-width: 650px) {
+  .section_foto_card {
+    background-image: none;
+    padding-top: 0px;
+    padding-left: 0px;
+  }
+}
+.section_foto_card .fotos_box {
+  max-width: 530px;
+  height: 479px;
+  background-color: #252061;
+}
+@media (max-width: 720px) {
+  .section_foto_card .fotos_box {
+    margin-top: 440px;
+  }
+}
+@media (max-width: 650px) {
+  .section_foto_card .fotos_box {
+    margin-top: 40px;
+  }
+}
+.section_foto_card .fotos_box .fotos_box_p {
+  margin-top: 40px;
+  padding-left: 50px;
+  max-width: 414px;
+  height: 46px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 23px;
+  color: #ffffff;
+}
+@media (max-width: 545px) {
+  .section_foto_card .fotos_box .fotos_box_p {
+    padding-left: 5px;
+  }
+}
+.section_foto_card h3 {
+  padding: 49px 0 0 50px;
+  max-width: 414px;
+  height: 180px;
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 60px;
+  color: #ffffff;
+}
+@media (max-width: 545px) {
+  .section_foto_card h3 {
+    padding: 49px 0 0 5px;
+  }
+}
+@media (max-width: 400px) {
+  .section_foto_card h3 {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 40px;
+  }
+}
+.section_foto_card .foto_btn {
+  margin: 60px 0 0 50px;
+  max-width: 355px;
+  height: 68px;
+  background-color: #2bca8b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+@media (max-width: 545px) {
+  .section_foto_card .foto_btn {
+    margin: 60px 0 0 0;
+  }
+}
+.section_foto_card .foto_btn img {
+  padding-left: 30px;
+}
+.section_foto_card .foto_btn a {
+  color: #ffffff;
+}
+.section_foto_card .foto_btn .foto_text_p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 23px;
+  max-width: 295px;
+  color: #ffffff;
+}
+
+.section_get_card {
+  padding-top: 500px;
+  position: absolute !important;
+  top: 2350px;
+  background-image: url("../images/get_card.png");
+  background-size: cover;
+  width: 100%;
+  height: 1193px;
+}
+@media (max-width: 1040px) {
+  .section_get_card {
+    top: 3500px;
+    padding-top: 700px;
+    height: 1400px;
+  }
+}
+@media (max-width: 415px) {
+  .section_get_card {
+    top: 3200px;
+  }
+}
+@media (max-width: 720px) {
+  .section_get_card {
+    padding-top: 900px;
+  }
+}
+@media (max-width: 650px) {
+  .section_get_card {
+    padding-top: 450px;
+  }
+}
+@media (max-width: 520px) {
+  .section_get_card {
+    padding-top: 270px;
+  }
+}
+@media (max-width: 854px) {
+  .section_get_card {
+    height: 2500px;
+  }
+}
+.section_get_card h2 {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 639px;
+  height: 49px;
+  font-size: 52px;
+  font-weight: 400;
+  line-height: 49px;
+  color: #ffffff;
+}
+.section_get_card .section_money_cards {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+@media (max-width: 855px) {
+  .section_get_card .section_money_cards {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.section_get_card .section_money_card {
+  margin-top: 100px;
+  width: 287px;
+  height: 450px;
+  background-color: #ffffff;
+  transition: 1s;
+}
+.section_get_card .section_money_card:hover {
+  transform: scale(1.2);
+}
+.section_get_card .section_money_card:hover h6 {
+  color: #2bca8b;
+}
+.section_get_card .section_money_card:hover button {
+  background-color: #f55f39;
+}
+.section_get_card .section_money_card .money_card_document {
+  padding: 22px 0 0 41px;
+  display: flex;
+  gap: 15px;
+}
+.section_get_card .section_money_card h2 {
+  margin: 20px 0 0 41px;
+  font-size: 52px;
+  font-weight: 400;
+  line-height: 49px;
+  color: #000000;
+}
+.section_get_card .section_money_card h2 span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 34px;
+}
+.section_get_card .section_money_card h6 {
+  padding: 41px 0 0 41px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 23px;
+  color: #252061;
+  transition: 1s;
+}
+.section_get_card .section_money_card button {
+  margin: 30px 0 0 41px;
+  width: 112px;
+  height: 47px;
+  background-color: #2bca8b;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 23px;
+  color: #ffffff;
+  border: none;
+  transition: 1s;
+}
+.section_get_card .section_money_card p {
+  padding: 21px 0 0 41px;
+  width: 189px;
+  height: 57px;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 19px;
+  opacity: 50%;
 }
