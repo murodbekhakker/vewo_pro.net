@@ -26,6 +26,7 @@ a {
 }
 
 header {
+  padding: 15px 0 15px 0;
   z-index: 999999999;
   position: sticky;
   top: 0;
@@ -52,6 +53,7 @@ nav {
   }
 }
 nav .nav_input {
+  box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
   border-radius: 5px;
   width: 290px;
   height: 40px;
@@ -123,6 +125,9 @@ nav .nav_menus_logo .nav_menu_link {
   nav .nav_menus_logo .nav_menu_link {
     color: #ffffff;
   }
+}
+nav .nav_menus_logo .nav_menu_link:hover {
+  color: #f55f39;
 }
 @media (max-width: 470px) {
   nav .nav_menus_logo .nav_menu {
@@ -419,6 +424,7 @@ nav .nav_menus_logo .nav_menu_link {
   }
 }
 .section_blog .section_blog_card {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
   padding-top: 385px;
   background-image: url("../images/blog_card.png");
   background-size: cover;
@@ -475,14 +481,17 @@ nav .nav_menus_logo .nav_menu_link {
   color: #252061;
 }
 .section_blog .section_blog_cards_images .blog_image_1 {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
   width: 100%;
   height: auto;
 }
 .section_blog .section_blog_cards_images .blog_image_2 {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
   width: 100%;
   height: auto;
 }
 .section_blog .section_blog_cards_images .blog_image_3_card {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
   background-image: url("../images/blog_image_3.png");
   background-size: cover;
   height: 200px;
@@ -678,6 +687,7 @@ nav .nav_menus_logo .nav_menu_link {
   }
 }
 .section_get_card .section_money_card {
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
   border-radius: 15px;
   width: 265px;
   height: 450px;
@@ -846,6 +856,7 @@ nav .nav_menus_logo .nav_menu_link {
   color: #252061;
 }
 .main_cards .kind_card {
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
   padding-left: 55px;
   margin-top: 90px;
   width: 100%;
@@ -1011,6 +1022,7 @@ nav .nav_menus_logo .nav_menu_link {
 }
 
 .footer_head_card {
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
   width: 300px;
   height: 296px;
   border: 3px solid #d9d9d9;
