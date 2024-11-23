@@ -34,6 +34,9 @@ header {
   top: 0;
   scroll-behavior: smooth;
   background-color: var.$bg-white;
+  .dark & {
+    background-color: var.$bg-dark;
+  }
 }
 nav {
   display: flex;
@@ -46,7 +49,7 @@ nav {
   }
   @media (max-width: 470px) {
     flex-direction: row;
-    gap: 20px;
+    gap: 10px;
   }
 
   .nav_input {
@@ -59,6 +62,7 @@ nav {
     border: 1px solid var.$bg-grey-border;
     display: flex;
     align-items: center;
+    background-color: var.$bg-white;
     button {
       border-radius: 0 5px 5px 0;
       border: none;
@@ -100,11 +104,11 @@ nav {
   }
   .nav_menus_logo {
     display: flex;
-    gap: 21px;
+    gap: 10px;
     .nav_menu {
       display: flex;
       align-items: center;
-      gap: 21px;
+      gap: 7px;
       &_link {
         width: 137px;
         height: 23px;
@@ -120,10 +124,14 @@ nav {
             color: var.$bg-white;
           }
         }
+        .dark & {
+          color: var.$bg-white;
+        }
       }
       &_link:hover {
-        color: var.$bg-fire-yellow;
+        color: var.$bg-color-dark-grey;
       }
+
       @media (max-width: 470px) {
         & {
           position: absolute;
@@ -177,6 +185,9 @@ nav {
     span {
       color: var.$bg-green;
       text-decoration: underline;
+      .dark & {
+        color: var.$bg-fire-yellow;
+      }
     }
     @media (max-width: 515px) {
       & {
@@ -189,6 +200,9 @@ nav {
         font-size: 25px;
         line-height: 50px;
       }
+    }
+    .dark & {
+      color: var.$bg-green;
     }
   }
   p {
@@ -205,15 +219,24 @@ nav {
         line-height: 30px;
       }
     }
+    .dark & {
+      color: var.$bg-dark;
+    }
   }
   .big_btns {
     display: flex;
     gap: 15px;
     .big_btn_2 {
       background-color: var.$bg-green;
+      .dark & {
+        background-color: var.$bg-dark;
+      }
     }
     .big_btn_1 {
       background-color: var.$bg-fire-yellow;
+      .dark & {
+        background-color: var.$bg-green;
+      }
     }
     .big_btn {
       margin-top: 85px;
@@ -240,6 +263,9 @@ nav {
           margin-top: 20px;
         }
       }
+      .dark & {
+        color: var.$bg-dark;
+      }
     }
     @media (max-width: 450px) {
       margin-top: 20px;
@@ -249,6 +275,7 @@ nav {
 }
 
 .help-section {
+  background-color: var.$bg-white;
   h2 {
     width: 125px;
     height: 117px;
@@ -260,6 +287,9 @@ nav {
       font-size: 20px;
       font-weight: 400;
       line-height: 30px;
+    }
+    .dark & {
+      color: var.$bg-white;
     }
   }
   .writers-section_pages {
@@ -278,6 +308,12 @@ nav {
       .help-link-item {
         display: flex;
         flex-direction: column;
+        .help-links {
+          color: var.$bg-color-dark-grey;
+          .dark & {
+            color: var.$bg-white;
+          }
+        }
       }
       @media (max-width: 520px) {
         flex-direction: row;
@@ -362,11 +398,18 @@ nav {
         @media (max-width: 430px) {
           display: none;
         }
+        .dark & {
+          background-color: var.$bg-dark;
+        }
       }
     }
   }
+  .dark & {
+    background-color: var.$bg-dark;
+  }
 }
 .section_blog {
+  background-color: var.$bg-white;
   h2 {
     max-width: 470px;
     height: 98px;
@@ -413,6 +456,9 @@ nav {
         font-weight: 400;
         line-height: 38px;
         color: var.$bg-color-dark-grey;
+        .dark & {
+          color: var.$bg-white;
+        }
       }
       p {
         margin-top: 33px;
@@ -445,6 +491,9 @@ nav {
           line-height: 23px;
           color: var.$bg-color-dark-grey;
         }
+      }
+      .dark & {
+        background-color: var.$bg-green;
       }
     }
   }
@@ -494,6 +543,9 @@ nav {
         color: var.$bg-fire-yellow;
       }
     }
+  }
+  .dark & {
+    background-color: var.$bg-dark;
   }
 }
 .section_foto_card {
@@ -738,6 +790,12 @@ nav {
     color: var.$bg-white;
   }
 }
+main {
+  background-color: var.$bg-white;
+  .dark & {
+    background-color: var.$bg-dark;
+  }
+}
 .main_cards {
   display: flex;
   @media (max-width: 930px) {
@@ -755,6 +813,9 @@ nav {
       span {
         color: var.$bg-green;
         text-decoration: underline;
+      }
+      .dark & {
+        color: var.$bg-white;
       }
     }
     .daughter_inage {
@@ -870,6 +931,7 @@ nav {
   }
 }
 .footer_head {
+  padding-bottom: 100px;
   h4 {
     margin-top: 100px !important;
     margin: 0 auto;
@@ -890,6 +952,9 @@ nav {
       font-size: 13px;
       font-weight: 400;
       line-height: 35px;
+    }
+    .dark & {
+      color: var.$bg-white;
     }
   }
   h2 {
@@ -912,6 +977,9 @@ nav {
       font-weight: 400;
       line-height: 35px;
     }
+    .dark & {
+      color: var.$bg-white;
+    }
   }
   .footer_head_input {
     margin-top: 50px !important;
@@ -924,6 +992,7 @@ nav {
     margin: 0 auto;
 
     form {
+      background-color: var.$bg-white;
       display: flex;
       align-items: center;
       img {
@@ -956,6 +1025,7 @@ nav {
   }
 }
 .footer_head_card {
+  background-color: var.$bg-white;
   box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
     rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
   width: 300px;
@@ -981,6 +1051,9 @@ nav {
       font-weight: 400;
       line-height: 23px;
       color: var.$bg-fire-yellow;
+      .dark & {
+        color: var.$bg-dark;
+      }
     }
   }
   button {
@@ -989,11 +1062,16 @@ nav {
     height: 53px;
     background-color: var.$bg-grey-border;
     border: none;
+    .dark & {
+      background-color: var.$bg-fire-yellow;
+    }
+  }
+  .dark & {
+    background-color: var.$bg-green;
   }
 }
 footer {
   padding-bottom: 110px;
-  margin-top: 100px;
   background-image: url("../images/footer.png");
   background-size: cover;
   width: 100%;
